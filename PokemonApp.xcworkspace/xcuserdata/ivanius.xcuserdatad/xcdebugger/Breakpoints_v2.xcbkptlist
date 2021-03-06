@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CB823FB4-EF64-4410-8E8D-6983B67F026B"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "58FB0E3B-8C23-4C12-B0FA-C3D1AC887A88"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/PokemonRequestExecutorExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "promiseQuery(request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC02BEFF-1337-42FA-BA61-2A81C230F0BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/PokemonRequestExecutorExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "promiseQuery(request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08F4A5C1-18B9-4ACF-B51D-A962AE7BB87F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/PokemonRequestExecutorExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "promiseQuery(request:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "08F4A5C1-18B9-4ACF-B51D-A962AE7BB87F - 8c25877ed70da202"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (PromiseKit.Resolver&lt;Swift.Array&lt;A&gt;&gt;) -&gt; () in PokemonApp.PokemonRequestExecutor.promiseQuery&lt;A where A: ObjectMapper.Mappable&gt;(request: Swift.Optional&lt;Foundation.URLRequest&gt;) -&gt; PromiseKit.Promise&lt;Swift.Array&lt;A&gt;&gt;"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/Service/PokemonRequestExecutorExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "512">
+               </Location>
+               <Location
+                  uuid = "08F4A5C1-18B9-4ACF-B51D-A962AE7BB87F - 7b61de4209f4310f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;PokemonApp.APIError&gt;) -&gt; () in closure #1 (PromiseKit.Resolver&lt;Swift.Array&lt;A&gt;&gt;) -&gt; () in PokemonApp.PokemonRequestExecutor.promiseQuery&lt;A where A: ObjectMapper.Mappable&gt;(request: Swift.Optional&lt;Foundation.URLRequest&gt;) -&gt; PromiseKit.Promise&lt;Swift.Array&lt;A&gt;&gt;"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/Service/PokemonRequestExecutorExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BAC268E-7729-446F-A9EE-1202E254B49B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "init(interactor:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50A95EB5-7B45-4002-81B1-56F05114AB57"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "init(interactor:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "693D395C-D4E4-4932-8C2B-CFF76D74DBAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77686FB6-91B2-41A0-9FB0-B6B7B7C7E592"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonGridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "77686FB6-91B2-41A0-9FB0-B6B7B7C7E592 - efbf418bcaacab63"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;PokemonApp.Pokemon&gt;, Swift.Int, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;PokemonApp.Pokemon&gt;, Swift.Int, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in PokemonApp.PokemonGridView.body.getter : some"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "77686FB6-91B2-41A0-9FB0-B6B7B7C7E592 - 28cb8a099bc60d42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (PokemonApp.Pokemon) -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;PokemonApp.Pokemon&gt;, Swift.Int, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;PokemonApp.Pokemon&gt;, Swift.Int, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in PokemonApp.PokemonGridView.body.getter : some"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1742FE83-9B18-40F7-BA10-F9D2B51546DC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchPokemons()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4CEBBC9-5025-4A80-9C6D-CEC29E4B8224"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchPokemons()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F4CEBBC9-5025-4A80-9C6D-CEC29E4B8224 - 5206e312daf7a9cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokemonApp.PokemonPresenter.fetchPokemon() -&gt; Combine.AnyCancellable"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "F4CEBBC9-5025-4A80-9C6D-CEC29E4B8224 - 4b9c9d427bd35831"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (PokemonApp.PokeAPIResponse) -&gt; Combine.Publishers.Collect&lt;Combine.Publishers.MergeMany&lt;Combine.AnyPublisher&lt;PokemonApp.Pokemon, Swift.Error&gt;&gt;&gt; in PokemonApp.PokemonPresenter.fetchPokemon() -&gt; Combine.AnyCancellable"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A56B14C-D5EB-4C4D-813A-9EB61E36FE08"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "PokemonPresenter"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2188F952-7A1F-4191-87BF-A8E95DCBC4E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "PokemonPresenter"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C445B014-6608-4850-B96D-812472AB43E3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "833CAAAC-E0D2-45BE-A80C-241C1E29DFB0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8665EB41-6D65-4CAD-8593-DE91AE1A8830"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34B93FDE-9CD3-4DE0-AD32-D0AF9F8F71D8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F27F23ED-0F9C-4E9D-912A-885A2469A198"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F27F23ED-0F9C-4E9D-912A-885A2469A198 - 7dda9a36f791efae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokemonApp.APIServiceImpl.fetchRequest() -&gt; Combine.AnyPublisher&lt;PokemonApp.PokeAPIResponse, Swift.Never&gt;"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/Service/APIServiceImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1240">
+               </Location>
+               <Location
+                  uuid = "F27F23ED-0F9C-4E9D-912A-885A2469A198 - 96812e6092a63eee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Foundation.Data in PokemonApp.APIServiceImpl.fetchRequest() -&gt; Combine.AnyPublisher&lt;PokemonApp.PokeAPIResponse, Swift.Never&gt;"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/Service/APIServiceImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED9BD926-5076-4FFD-9279-08311AB2FDCD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "055DC7A9-369C-4E7F-9B83-865D0F7671D1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A615915-B7D3-47BE-AEAF-6A9954564FA9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A05CE69-63C3-4EDB-98D3-B21A069473EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14BBC2FF-B843-4656-8CC5-283A2FFD9044"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/Service/APIServiceImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45894FCE-86EA-4FD1-BCF8-E3F54C27F97B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "fetchPokemons()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "45894FCE-86EA-4FD1-BCF8-E3F54C27F97B - 541328013e7d0c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;PokemonApp.Pokemon&gt;) -&gt; () in PokemonApp.PokemonPresenter.fetchPokemon() -&gt; ()"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "45894FCE-86EA-4FD1-BCF8-E3F54C27F97B - d66950492b45d736"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (PokemonApp.Pokemon, PokemonApp.Pokemon) -&gt; Swift.Bool in closure #2 (Swift.Array&lt;PokemonApp.Pokemon&gt;) -&gt; () in PokemonApp.PokemonPresenter.fetchPokemon() -&gt; ()"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F63AD74-E50E-4CA5-95EE-68607DA5B81C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchPokemons()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F63AD74-E50E-4CA5-95EE-68607DA5B81C - 7d2c93334b05bef8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokemonApp.PokemonPresenter.fetchPokemon() -&gt; ()"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "456">
+               </Location>
+               <Location
+                  uuid = "4F63AD74-E50E-4CA5-95EE-68607DA5B81C - 1f21e55a8b4aeabf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in PokemonApp.PokemonPresenter.fetchPokemon() -&gt; ()"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "4F63AD74-E50E-4CA5-95EE-68607DA5B81C - 541328013e7d0c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;PokemonApp.Pokemon&gt;) -&gt; () in PokemonApp.PokemonPresenter.fetchPokemon() -&gt; ()"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11A06166-FC1A-4CEB-BD6E-336A8B3C35EA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonGridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "11A06166-FC1A-4CEB-BD6E-336A8B3C35EA - 4f277e7966abe4ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (PokemonApp.Pokemon) -&gt; &lt;&lt;opaque return type of PokemonApp.PokemonPresenter.linkBuilder&lt;A where A: SwiftUI.View&gt;(for: PokemonApp.Pokemon, content: () -&gt; A) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;PokemonApp.Pokemon&gt;, Swift.Int, &lt;&lt;opaque return type of PokemonApp.PokemonPresenter.linkBuilder&lt;A where A: SwiftUI.View&gt;(for: PokemonApp.Pokemon, content: () -&gt; A) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;PokemonApp.Pokemon&gt;, Swift.Int, &lt;&lt;opaque return type of PokemonApp.PokemonPresenter.linkBuilder&lt;A where A: SwiftUI.View&gt;(for: PokemonApp.Pokemon, content: () -&gt; A) -&gt; some&gt;&gt;.0&gt;&gt; in PokemonApp.PokemonGridView.body.getter : some"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "11A06166-FC1A-4CEB-BD6E-336A8B3C35EA - c5031e9d9ebc6251"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.overlay&lt;A where A1: SwiftUI.View&gt;(_: A1, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0 in closure #1 (PokemonApp.Pokemon) -&gt; &lt;&lt;opaque return type of PokemonApp.PokemonPresenter.linkBuilder&lt;A where A: SwiftUI.View&gt;(for: PokemonApp.Pokemon, content: () -&gt; A) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;PokemonApp.Pokemon&gt;, Swift.Int, &lt;&lt;opaque return type of PokemonApp.PokemonPresenter.linkBuilder&lt;A where A: SwiftUI.View&gt;(for: PokemonApp.Pokemon, content: () -&gt; A) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;PokemonApp.Pokemon&gt;, Swift.Int, &lt;&lt;opaque return type of PokemonApp.PokemonPresenter.linkBuilder&lt;A where A: SwiftUI.View&gt;(for: PokemonApp.Pokemon, content: () -&gt; A) -&gt; some&gt;&gt;.0&gt;&gt; in PokemonApp.PokemonGridView.body.getter : some"
+                  moduleName = "PokemonApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanius/Desktop/PokemonApp/PokemonApp/PokemonModule/PokemonGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "592">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47B39450-CDFA-445E-B52D-538F17EABC90"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonApp/PokemonModule/PokemonInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getNextPokemons()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
