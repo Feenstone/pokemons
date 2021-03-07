@@ -14,11 +14,10 @@ class APIServiceImpl : ObservableObject {
     
     @Published var pokemons: [Pokemon] = []
     
-    let decoder = JSONDecoder()
+    private let decoder = JSONDecoder()
     
     init() {
         builder = PokemonRequestBuilder()
-
     }
 }
 
@@ -47,8 +46,6 @@ extension APIServiceImpl: APIService {
     }
     
     func namedResourceGetter(_ namedURL: NamedURL) -> AnyPublisher<Pokemon, Error> {
-        let decoder = JSONDecoder()
-        
         return URLSession.shared.dataTaskPublisher(for: namedURL.url)
             .map { $0.data }
             .decode(type: Pokemon.self, decoder: decoder)

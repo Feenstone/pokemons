@@ -11,5 +11,6 @@ import Combine
 
 protocol APIService {
     func fetchRequest() -> AnyPublisher<PokeAPIResponse, Error>
+    func fetchNextRequest(url: URL) -> AnyPublisher<PokeAPIResponse, Error>
     func namedResourceGetter(_ namedURL: NamedURL) -> AnyPublisher<Pokemon, Error>
 }

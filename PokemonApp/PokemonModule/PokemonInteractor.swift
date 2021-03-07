@@ -13,10 +13,6 @@ class PokemonInteractor {
     
     var nextPage : URL?
     
-    init() {
-        nextPage = URL(string: "1")
-    }
-    
     func getPokemons() -> AnyPublisher<[Pokemon], Error>{
         service.fetchRequest().compactMap({ (response) -> PokeAPIResponse in
             self.nextPage = response.next
