@@ -6,52 +6,59 @@
 //
 
 import Foundation
-import PromiseKit
+import Alamofire
+import RxSwift
 import Combine
 
 class APIServiceImpl : ObservableObject {
     fileprivate let builder : PokemonRequestBuilder
     
-    @Published var pokemons: [Pokemon] = []
-    
     let decoder = JSONDecoder()
     
     init() {
         builder = PokemonRequestBuilder()
-
     }
 }
 
 extension APIServiceImpl: APIService {
-    func fetchRequest() -> AnyPublisher<PokeAPIResponse, Error> {
-                
-        return URLSession.shared.dataTaskPublisher(for: builder.fetchRequest())
-            .tryMap({ element -> Data in
-                guard let httpResponse = element.response as? HTTPURLResponse,
-                      httpResponse.statusCode == 200 else {
-                    throw URLError(.badServerResponse)
+    func request<T:Codable>(_ urlConvertible: URLRequestConvertible) -> Observable<T> {
+        return Observable<T>.create { (observer) in
+            let request = AF.request(urlConvertible).responseDecodable { (response: DataResponse<T, AFError>) in
+                switch response.result {
+                case .success(let value):
+                    observer.onNext(value)
+                    observer.onCompleted()
+                case .failure(let error):
+                    switch response.response?.statusCode {
+                    case 403:
+                        observer.onError(APIError(message: "Forbidden"))
+                    case 404:
+                        observer.onError(APIError(message: "Not Found"))
+                    case 409:
+                        observer.onError(APIError(message: "Conflict"))
+                    case 500:
+                        observer.onError(APIError(message: "Internal Server Error"))
+                    default:
+                        observer.onError(APIError(message: error.localizedDescription))
+                    }
                 }
-                return element.data
-            })
-            .decode(type: PokeAPIResponse.self, decoder: decoder)
-            .receive(on: RunLoop.main)
-            .eraseToAnyPublisher()
+            }
+            
+            return Disposables.create {
+                request.cancel()
+            }
+        }
     }
     
-    func fetchNextRequest(url: URL) -> AnyPublisher<PokeAPIResponse, Error> {
-        return URLSession.shared.dataTaskPublisher(for: url)
-            .map {$0.data}
-            .decode(type: PokeAPIResponse.self, decoder: decoder)
-            .receive(on: RunLoop.main)
-            .eraseToAnyPublisher()
+    func fetchRequest() -> Observable<PokeAPIResponse> {
+        return request(builder.fetchRequest())
     }
     
-    func namedResourceGetter(_ namedURL: NamedURL) -> AnyPublisher<Pokemon, Error> {
-        let decoder = JSONDecoder()
-        
-        return URLSession.shared.dataTaskPublisher(for: namedURL.url)
-            .map { $0.data }
-            .decode(type: Pokemon.self, decoder: decoder)
-            .eraseToAnyPublisher()
+    func fetchNextRequest(url: URL) -> Observable<PokeAPIResponse> {
+        return request(URLRequest(url: url))
+    }
+    
+    func namedResourceGetter(_ namedURL: NamedURL) -> Observable<Pokemon> {
+        return request(URLRequest(url: namedURL.url))
     }
 }

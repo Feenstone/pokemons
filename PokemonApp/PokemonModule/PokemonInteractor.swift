@@ -7,39 +7,24 @@
 
 import Foundation
 import Combine
+import RxSwift
 
 class PokemonInteractor {
     private let service = APIServiceImpl()
     
     var nextPage : URL?
     
-    init() {
-        nextPage = URL(string: "1")
+    func getPokemons() -> Observable<[Pokemon]>{
+        service.fetchRequest().flatMap({ (response) -> Observable<[Pokemon]> in
+            self.nextPage = response.next
+            return Observable.zip(response.results.map(self.service.namedResourceGetter))
+        })
     }
     
-    func getPokemons() -> AnyPublisher<[Pokemon], Error>{
-        service.fetchRequest().compactMap({ (response) -> PokeAPIResponse in
+    func getNextPokemons() -> Observable<[Pokemon]> {
+        service.fetchNextRequest(url: nextPage!).flatMap({ (response) -> Observable<[Pokemon]> in
             self.nextPage = response.next
-            return response
-        }).flatMap{response in
-            Publishers.MergeMany(
-                response.results.map(self.service.namedResourceGetter)
-            )
-            .collect()
-        }
-        .eraseToAnyPublisher()
-    }
-    
-    func getNextPokemons() -> AnyPublisher<[Pokemon], Error> {
-        service.fetchNextRequest(url: nextPage!).compactMap({ (response) -> PokeAPIResponse in
-            self.nextPage = response.next
-            return response
-        }).flatMap{response in
-            Publishers.MergeMany(
-                response.results.map(self.service.namedResourceGetter)
-            )
-            .collect()
-        }
-        .eraseToAnyPublisher()
+            return Observable.zip(response.results.map(self.service.namedResourceGetter))
+        })
     }
 }

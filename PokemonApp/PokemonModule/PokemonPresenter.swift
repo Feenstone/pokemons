@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import RxSwift
 import Combine
 
 class PokemonPresenter : ObservableObject {
@@ -20,9 +21,10 @@ class PokemonPresenter : ObservableObject {
             }
         }
     }
-    private var cancellables = Set<AnyCancellable>()
+    
     private let router = PokemonGridRouter()
     
+    private let disposeBag = DisposeBag()
     
     init(interactor: PokemonInteractor) {
         self.interactor = interactor
@@ -31,12 +33,15 @@ class PokemonPresenter : ObservableObject {
     
     func fetchPokemons(){
         interactor.getPokemons()
-            .receive(on: RunLoop.main)
-            .sink(receiveCompletion: {_ in}, receiveValue: {pokemons in
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { pokemons in
                 self.pokemons = pokemons.sorted(by: {$0.id < $1.id})
+            }, onError: { error in
+                print(error.localizedDescription)
+            }, onCompleted: {
                 self.loading = false
             })
-            .store(in: &cancellables)
+            .disposed(by: disposeBag)
     }
     
     func fetchNextPokemons(){
@@ -44,11 +49,13 @@ class PokemonPresenter : ObservableObject {
             isLastPage = true
         }
         interactor.getNextPokemons()
-            .receive(on: RunLoop.main)
-            .sink(receiveCompletion: {_ in}, receiveValue: {pokemons in
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: {pokemons in
                 self.pokemons += pokemons.sorted(by: {$0.id < $1.id})
+            }, onError: { error in
+                print(error.localizedDescription)
             })
-            .store(in: &cancellables)
+            .disposed(by: disposeBag)
     }
     
     func linkBuilder<Content: View>(

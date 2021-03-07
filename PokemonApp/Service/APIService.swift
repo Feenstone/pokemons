@@ -6,10 +6,13 @@
 //
 
 import Foundation
-import PromiseKit
+import RxSwift
+import Alamofire
 import Combine
 
 protocol APIService {
-    func fetchRequest() -> AnyPublisher<PokeAPIResponse, Error>
-    func namedResourceGetter(_ namedURL: NamedURL) -> AnyPublisher<Pokemon, Error>
+    func request<T:Codable>(_ urlConvertible: URLRequestConvertible) -> Observable<T>
+    func fetchRequest() -> Observable<PokeAPIResponse>
+    func fetchNextRequest(url: URL) -> Observable<PokeAPIResponse>
+    func namedResourceGetter(_ namedURL: NamedURL) -> Observable<Pokemon>
 }

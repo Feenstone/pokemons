@@ -10,4 +10,6 @@ target 'PokemonApp' do
   pod ‘Alamofire’
   pod "PromiseKit"
   pod "ObjectMapper"
+  pod "RxSwift"
+  pod "RxCocoa"
 end
