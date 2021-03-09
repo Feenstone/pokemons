@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct PokemonGridView: View {
-    @ObservedObject var presenter: PokemonPresenter
+    @ObservedObject var viewModel: PokemonViewModel
     var builder : PokemonRequestBuilder
     
     var body: some View {
         NavigationView{
-            RefreshableScrollView(height: 70, refreshing: $presenter.loading) {
+            RefreshableScrollView(height: 70, refreshing: $viewModel.loading) {
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], alignment: .center, spacing: 20) {
-                ForEach(presenter.pokemons, id: \.id) { item in
-                    self.presenter.linkBuilder(for: item){
+                ForEach(viewModel.pokemons, id: \.id) { item in
+                    NavigationLink(destination: PokemonDetailView(pokemon: item, builder: builder)){
                     ZStack {
                     AsyncImage(url: builder.fetchImageURL(id: item.id),
                                placeholder: {Text("Loading ...") },
@@ -28,13 +28,13 @@ struct PokemonGridView: View {
                     .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous).stroke(Color.black, lineWidth: 1))
                     .onAppear{
                         if self.shouldLoadNextPage(currentItem: item) {
-                            self.presenter.fetchNextPokemons()
+                            self.viewModel.fetchNextPokemons()
                         }
                     }
                     }
                 }
             }
-            if presenter.isLastPage == false {
+            if viewModel.isLastPage == false {
                ProgressView()
             }
         }
@@ -43,19 +43,18 @@ struct PokemonGridView: View {
     }
     
     private func shouldLoadNextPage(currentItem item: Pokemon) -> Bool {
-        let currentIndex = self.presenter.pokemons.firstIndex(where: { $0.id == item.id } )
-        let lastIndex = self.presenter.pokemons.count - 1
+        let currentIndex = self.viewModel.pokemons.firstIndex(where: { $0.id == item.id } )
+        let lastIndex = self.viewModel.pokemons.count - 1
         let offset = 0
         return currentIndex == lastIndex - offset
     }
 
 struct PokemonGridView_Previews: PreviewProvider {
     static var previews: some View {
-        let interactor = PokemonInteractor()
-        let presenter = PokemonPresenter(interactor: interactor)
+        let viewModel = PokemonViewModel()
         let builder = PokemonRequestBuilder()
         return NavigationView{
-        PokemonGridView(presenter: presenter, builder: builder)
+        PokemonGridView(viewModel: viewModel, builder: builder)
             }
         }
     }

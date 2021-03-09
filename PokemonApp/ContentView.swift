@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        PokemonGridView(presenter: PokemonPresenter(interactor: PokemonInteractor()), builder: PokemonRequestBuilder())
+        PokemonGridView(viewModel: PokemonViewModel(), builder: PokemonRequestBuilder())
     }
 }
 
